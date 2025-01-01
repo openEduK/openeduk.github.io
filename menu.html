@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú - EmaEduK</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu hoja de estilos -->
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#sobre">Sobre Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#unete">Únete a Nosotros</a></li>
+            <li><a href="#" onclick="changeIframe('cursos.html')">Cursos</a></li>
+            <li><a href="#" onclick="changeIframe('sobre.html')">Sobre Nosotros</a></li>
+            <li><a href="#" onclick="changeIframe('contacto.html')">Contacto</a></li>
+            <li><a href="#" onclick="changeIframe('unete.html')">Únete a Nosotros</a></li>
         </ul>
     </nav>
 
@@ -23,10 +23,10 @@
         <div class="module-title" onclick="toggleModule('cursos-content')">Cursos Disponibles</div>
         <div id="cursos-content" class="module-content">
             <ul>
-                <li><a href="#curso1">Curso 1</a></li>
-                <li><a href="#curso2">Curso 2</a></li>
-                <li><a href="#curso3">Curso 3</a></li>
-                <li><a href="#curso4">Curso 4</a></li>
+                <li><a href="#" onclick="changeIframe('curso1.html')">Curso 1</a></li>
+                <li><a href="#" onclick="changeIframe('curso2.html')">Curso 2</a></li>
+                <li><a href="#" onclick="changeIframe('curso3.html')">Curso 3</a></li>
+                <li><a href="#" onclick="changeIframe('curso4.html')">Curso 4</a></li>
             </ul>
         </div>
 
@@ -51,6 +51,11 @@
     </footer>
 
     <script>
+        function changeIframe(page) {
+            const iframe = window.parent.document.querySelector('iframe');
+            iframe.src = page; // Cambia el src del iframe a la nueva página
+        }
+
         function toggleModule(moduleId) {
             const moduleContent = document.getElementById(moduleId);
             moduleContent.classList.toggle('active');
