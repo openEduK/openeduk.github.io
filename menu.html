@@ -16,49 +16,10 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <h2>Menú de Navegación</h2>
-        <p>Selecciona una de las opciones del menú para navegar por la plataforma.</p>
-
-        <div class="module-title" onclick="toggleModule('cursos-content')">Cursos Disponibles</div>
-        <div id="cursos-content" class="module-content">
-            <ul>
-                <li><a href="#" onclick="changeIframe('curso1.html')">Curso 1</a></li>
-                <li><a href="#" onclick="changeIframe('curso2.html')">Curso 2</a></li>
-                <li><a href="#" onclick="changeIframe('curso3.html')">Curso 3</a></li>
-                <li><a href="#" onclick="changeIframe('curso4.html')">Curso 4</a></li>
-            </ul>
-        </div>
-
-        <div class="module-title" onclick="toggleModule('sobre-content')">Sobre Nosotros</div>
-        <div id="sobre-content" class="module-content">
-            <p>En EmaEduK, creemos que el acceso a la educación debe ser un derecho, no un privilegio.</p>
-        </div>
-
-        <div class="module-title" onclick="toggleModule('contacto-content')">Contacto</div>
-        <div id="contacto-content" class="module-content">
-            <p>Si tienes preguntas o deseas más información, no dudes en contactarnos.</p>
-        </div>
-
-        <div class="module-title" onclick="toggleModule('unete-content')">Únete a Nosotros</div>
-        <div id="unete-content" class="module-content">
-            <p>Si estás interesado en colaborar o tienes ideas para mejorar la plataforma, contáctanos.</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 EmaEduK. Todos los derechos reservados.</p>
-    </footer>
-
     <script>
         function changeIframe(page) {
             const iframe = window.parent.document.querySelector('iframe');
             iframe.src = page; // Cambia el src del iframe a la nueva página
-        }
-
-        function toggleModule(moduleId) {
-            const moduleContent = document.getElementById(moduleId);
-            moduleContent.classList.toggle('active');
         }
     </script>
 </body>
