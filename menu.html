@@ -1,3 +1,60 @@
-<nav class="navbar">
-        <p><a href="index.html">EmaEduK</a></p>    <p><a href="cursos.html">Cursos</a></p>    <p><a href="contacto.html">Contáctame</a></p>
-</nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - EmaEduK</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#sobre">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#unete">Únete a Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Menú de Navegación</h2>
+        <p>Selecciona una de las opciones del menú para navegar por la plataforma.</p>
+
+        <div class="module-title" onclick="toggleModule('cursos-content')">Cursos Disponibles</div>
+        <div id="cursos-content" class="module-content">
+            <ul>
+                <li><a href="#curso1">Curso 1</a></li>
+                <li><a href="#curso2">Curso 2</a></li>
+                <li><a href="#curso3">Curso 3</a></li>
+                <li><a href="#curso4">Curso 4</a></li>
+            </ul>
+        </div>
+
+        <div class="module-title" onclick="toggleModule('sobre-content')">Sobre Nosotros</div>
+        <div id="sobre-content" class="module-content">
+            <p>En EmaEduK, creemos que el acceso a la educación debe ser un derecho, no un privilegio.</p>
+        </div>
+
+        <div class="module-title" onclick="toggleModule('contacto-content')">Contacto</div>
+        <div id="contacto-content" class="module-content">
+            <p>Si tienes preguntas o deseas más información, no dudes en contactarnos.</p>
+        </div>
+
+        <div class="module-title" onclick="toggleModule('unete-content')">Únete a Nosotros</div>
+        <div id="unete-content" class="module-content">
+            <p>Si estás interesado en colaborar o tienes ideas para mejorar la plataforma, contáctanos.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EmaEduK. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleModule(moduleId) {
+            const moduleContent = document.getElementById(moduleId);
+            moduleContent.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
