@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menuContainer.innerHTML = `
     <div style="display: flex; justify-content: space-around;">
-    <div class="menu-item" onclick="window.location.href='index.html'">Inicio</div>
-    <div class="menu-item" onclick="window.location.href='cursos.html'">Cursos</div>
-    <div class="menu-item" onclick="window.location.href='sobre_nosotros.html'">Acerca de</div>
-    <div class="menu-item" onclick="window.location.href='contactanos.html'">Contáctanos</div>
+    <div class="menu-item" onclick="window.location.href='openeduk.github.io/index.html'">Inicio</div>
+    <div class="menu-item" onclick="window.location.href='openeduk.github.io/cursos.html'">Cursos</div>
+    <div class="menu-item" onclick="window.location.href='openeduk.github.io/sobre_nosotros.html'">Acerca de</div>
+    <div class="menu-item" onclick="window.location.href='openeduk.github.io/contactanos.html'">Contáctanos</div>
     </div>
     `;
 
