@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {    const menuContainer = document.createElement("div");
-    menuContainer.className = "menu"; // Agregar clase para el menú
-    menuContainer.style.position = "fixed"; // Fijo en la parte superior
+    menuContainer.className = "menu";
+    menuContainer.style.position = "fixed";
     menuContainer.style.top = "0";
     menuContainer.style.left = "0";
     menuContainer.style.right = "0";
