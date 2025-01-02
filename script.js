@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sections.forEach(section => {
         section.addEventListener('click', () => {
             sections.forEach(s => s.classList.remove('active'));
-            seion.classList.add('active');
+            section.classList.add('active');
             const list = section.querySelector('ul');
             if (list.style.display === 'block') {
                 list.style.display = 'none';
@@ -22,3 +22,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+});
