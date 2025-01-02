@@ -36,12 +36,22 @@ section:hover {
 }
 
 section.active ul {
-    display: block;
+    display: block; /* Muestra la lista cuando la sección es activa */
 }
 
 ul {
-    display: none;
-    padding-left: 20px;
+    display: none; /* Oculta las listas por defecto */
+    list-style-type: disc; /* Establece el tipo de lista */
+    padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
 }
 
 footer {
@@ -123,18 +133,3 @@ a {
 a:hover {
     color: #ffd700;
 }
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-li:last-child {
-    border-bottom: none;
-}
-
