@@ -9,13 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
             section.style.transform = "translateY(0)";
         }, index * 300);
     });
-    
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('nombre-proyecto').innerText = data.proyecto;
-            document.getElementById('extension').innerText = data.extension;
-            document.getElementById('correo').innerText = data.correo;
-        })
-        .catch(error => console.error('Error al cargar el archivo JSON:', error));
-});
+
+    sections.forEach(section => {
+        section.addEventListener('click', () => {
+            sections.forEach(s => s.classList.remove('active'));
+            seion.classList.add('active');
+            const list = section.querySelector('ul');
+            if (list.style.display === 'block') {
+                list.style.display = 'none';
+            } else {
+                list.style.display = 'block';
+            }
+        });
+    });
