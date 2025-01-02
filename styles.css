@@ -36,13 +36,13 @@ section:hover {
 }
 
 section.active ul {
-    display: block; /* Muestra la lista cuando la sección es activa */
+    display: block;
 }
 
 ul {
-    display: none; /* Oculta las listas por defecto */
-    list-style-type: disc; /* Establece el tipo de lista */
-    padding-left: 20px; /* Espaciado a la izquierda */
+    display: none;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 li {
