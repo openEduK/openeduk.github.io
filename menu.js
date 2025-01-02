@@ -1,11 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {    const menuContainer = document.createElement("div");    menuContainer.className = "menu";
-    menuContainer.style.position = "fixed";
-    menuContainer.style.top = "0";
-    menuContainer.style.left = "0";
-    menuContainer.style.right = "0";
-    menuContainer.style.zIndex = "1000";
-    menuContainer.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
-
+document.addEventListener("DOMContentLoaded", function() {
+    const menuContainer = document.createElement("div");
+    menuContainer.className = "menu";
     menuContainer.innerHTML = `
     <div style="display: flex; justify-content: space-around;">
     <div class="menu-item" onclick="window.location.href='https://openeduk.github.io/index.html'">Inicio</div>
@@ -16,4 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {    const menuContaine
     `;
 
     document.body.appendChild(menuContainer);
+
+    const footerContainer = document.createElement("div");
+    footerContainer.className = "footer";
+
+    footerContainer.innerHTML = `
+    <div>
+    <p class="footer">&copy; 2025 openEduK. Todos los derechos reservados.</p>
+    <p class="footer"><a href="https://openeduk.github.io/privacidad.html">Política de Privacidad</a> |
+    <a href="https://openeduk.github.io/terminos.html">Términos de Servicio</a></p>
+    </div>
+    `;
+
+    document.body.appendChild(footerContainer);
 });
