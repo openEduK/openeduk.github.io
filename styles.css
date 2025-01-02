@@ -125,8 +125,8 @@ a:hover {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 li {
@@ -137,3 +137,4 @@ li {
 li:last-child {
     border-bottom: none;
 }
+
