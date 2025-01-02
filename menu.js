@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     footerContainer.innerHTML = `
     <div>
-    <p class="footer">&copy; 2025 openEduK. Este proyecto está licenciado bajo la Licencia Pública General de GNU, versión 3 (GPL-3.0)..</p>
+    <p class="footer">&copy; 2025 openEduK. Este proyecto está licenciado bajo la Licencia Pública General de GNU, versión 3 (GPL-3.0).</p>
     <p class="footer"><a href="https://openeduk.github.io/privacidad.html">Política de Privacidad</a> |
     <a href="https://openeduk.github.io/terminos.html">Términos de Servicio</a></p>
     </div>
